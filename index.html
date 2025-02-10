@@ -1,14 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Meu Site</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        h1 { color: #333; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop.co - E-commerce</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Arquivo CSS externo -->
 </head>
 <body>
-    <h1>Olá, Mundo!</h1>
-    <p>Bem-vindo ao meu site de E-commerce Compass.</p>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>SHOP.CO</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">On Sale</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Brands</a></li>
+        </ul>
+      </nav>
+      <div class="header-icons">
+        <input type="text" placeholder="Search for products...">
+        <a href="#"><img src="cart-icon.png" alt="Cart"></a>
+        <a href="#"><img src="user-icon.png" alt="User"></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>FIND CLOTHES THAT MATCH YOUR STYLE</h2>
+      <p>Browse through our diverse range of meticulously crafted garments.</p>
+      <button>Shop Now</button>
+      <div class="stats">
+        <div><strong>200+</strong> International Brands</div>
+        <div><strong>2,000+</strong> High-Quality Products</div>
+        <div><strong>30,000+</strong> Happy Customers</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Arrivals -->
+  <section class="new-arrivals">
+    <div class="container">
+      <h3>New Arrivals</h3>
+      <div class="products">
+        <!-- Produto exemplo -->
+        <div class="product">
+          <img src="image/New Arrivals/Blusa Preta.png" alt="T-shirt">
+          <h4>T-shirt with Tape Details</h4>
+          <p>$120</p>
+        </div>
+        <!-- Adicione mais produtos aqui -->
+        <div class="product">
+            <img src="image/New Arrivals/Jeans.png" alt="T-shirt">
+            <h4>T-shirt with Tape Details</h4>
+            <p>$240</p>
+          </div>
+        <div class="product">
+            <img src="image/New Arrivals/Xadrez.png" alt="T-shirt">
+            <h4>T-shirt with Tape Details</h4>
+            <p>$180</p>
+          </div>
+        <div class="product">
+            <img src="image/New Arrivals/Preta e Laranja.png" alt="T-shirt">
+            <h4>T-shirt with Tape Details</h4>
+            <p>$130</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Selling -->
+  <section class="top-selling">
+    <div class="container">
+      <h3>Top Selling</h3>
+      <div class="products">
+        <!-- Produto exemplo -->
+        <div class="product">
+          <img src="image/Top Selling/Camisa Verde.png" alt="Skinny Fit Jeans">
+          <h4>Skinny Fit Jeans</h4>
+          <p>$212</p>
+        </div>
+        <!-- Adicione mais produtos aqui -->
+        <div class="product">
+            <img src="image/Top Selling/Blusa Laranja.png" alt="Skinny Fit Jeans">
+            <h4>Skinny Fit Jeans</h4>
+            <p>$145</p>
+        </div>
+        <div class="product">
+            <img src="image/Top Selling/Bermuda.png" alt="Skinny Fit Jeans">
+            <h4>Skinny Fit Jeans</h4>
+            <p>$80</p>
+        </div>
+        <div class="product">
+            <img src="image/Top Selling/Calça Preta.png" alt="Skinny Fit Jeans">
+            <h4>Skinny Fit Jeans</h4>
+            <p>$210</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Browse by Dress Style -->
+  <section class="dress-style">
+    <div class="container">
+      <h3>Browse by Dress Style</h3>
+      <div class="styles">
+        <div class="style">Casual</div>
+        <div class="style">Formal</div>
+        <div class="style">Party</div>
+        <div class="style">Gym</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="testimonials">
+    <div class="container">
+      <h3>Our Happy Customers</h3>
+      <div class="testimonials-list">
+        <blockquote>
+          <p>"I'm blown away by the quality and style of the clothes!"</p>
+          <cite>- Sarah M.</cite>
+        </blockquote>
+        <!-- Adicione mais depoimentos aqui -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <h3>Stay Up to Date About Our Latest Offers</h3>
+      <form>
+        <input type="email" placeholder="Enter your email">
+        <button type="submit">Subscribe to Newsletter</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Shop.co - All Rights Reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>

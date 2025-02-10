@@ -1,0 +1,249 @@
+/* styles.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background: #f8f8f8;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  header .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  header .header-icons input {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  header .header-icons a img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    background: #f0f0f0;
+    padding: 50px 20px;
+  }
+  
+  .hero h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .hero button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hero button:hover {
+    background: #555;
+  }
+  
+  .hero .stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  .hero .stats div {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Seções de Produtos */
+  section h3 {
+    font-size: 24px;
+    margin: 30px 0;
+    text-align: center;
+  }
+  
+  .products {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .product {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background: #fff;
+    max-width: 200px;
+  }
+  
+  .product img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .product h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .product p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Browse by Dress Style */
+  .dress-style .styles {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .dress-style .style {
+    background: #f0f0f0;
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .dress-style .style:hover {
+    background: #ddd;
+  }
+  
+  /* Testemunhos */
+  .testimonials-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  blockquote {
+    text-align: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    max-width: 300px;
+  }
+  
+  blockquote p {
+    font-size: 16px;
+    font-style: italic;
+  }
+  
+  blockquote cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Newsletter */
+  .newsletter {
+    background: #333;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .newsletter form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 300px;
+  }
+  
+  .newsletter button {
+    background: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .newsletter button:hover {
+    background: #ddd;
+  }
+  
+  /* Rodapé */
+  footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  
