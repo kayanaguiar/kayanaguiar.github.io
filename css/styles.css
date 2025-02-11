@@ -1,6 +1,27 @@
 /* styles.css */
 
 /* Reset básico */
+@font-face {
+    font-family: 'Integral CF';
+    src: url('/assets/fonts/Fontspring-DEMO-integralcf-bold.otf') format('opentype');
+    font-weight: 700; /* Peso Bold */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Integral CF';
+    src: url('/assets/fonts/Fontspring-DEMO-integralcf-regular.otf') format('opentype');
+    font-weight: 400; /* Peso Regular */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Integral CF';
+    src: url('/assets/fonts/Fontspring-DEMO-integralcf-extrabold.otf') format('opentype');
+    font-weight: 800; /* Peso Extra Bold */
+    font-style: normal;
+  }
+  
 * {
     margin: 0;
     padding: 0;
@@ -111,8 +132,9 @@
   
   /* Seções de Produtos */
   section h3 {
-    font-size: 24px;
-    margin: 30px 0;
+    font-family: 'Integral CF', sans-serif; /* Fonte personalizada */
+    font-size: 48px; /* Tamanho do texto */
+    font-weight: 800; /* Peso da fonte */
     text-align: center;
   }
   
@@ -149,27 +171,57 @@
     color: #333;
   }
   
-  /* Browse by Dress Style */
-  .dress-style .styles {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+  /* Seção de Estilo */
+.dress-style {
+    background: #F0F0F0;
+    padding: 40px 20px;
+    border-radius: 15px; /* Bordas arredondadas */
+    text-align: center;
+    margin: 20px auto; /* Centraliza o bloco */
+    max-width: 1100px; /* Ajuste da largura máxima */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
   }
+  
+  .dress-style h3 {
+    font-family: 'Integral CF', sans-serif; /* Fonte personalizada */
+    font-size: 48px; /* Tamanho do texto */
+    font-weight: 800; /* Peso da fonte */
+    line-height: 57.6px; /* Altura da linha */
+    letter-spacing: 0; /* Sem espaçamento entre letras */
+    text-align: center; /* Alinhamento centralizado */
+    color: #333; /* Cor do texto */
+    margin-bottom: 30px; /* Espaçamento abaixo do título */
+  }
+  
+  .dress-style .styles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Define 2 colunas fixas */
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-items: center;
+  }  
   
   .dress-style .style {
-    background: #f0f0f0;
-    padding: 20px 30px;
-    border-radius: 8px;
     text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
+    transition: transform 0.3s ease; /* Efeito ao passar o mouse */
+  }
+
+  .dress-style .style:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
   }
   
-  .dress-style .style:hover {
-    background: #ddd;
+  .dress-style .style img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px; /* Adicione se quiser bordas arredondadas */
   }
+  
+  .dress-style .style p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }  
   
   /* Testemunhos */
   .testimonials-list {
