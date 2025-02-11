@@ -86,50 +86,101 @@
     width: 24px;
     height: 24px;
   }
-  
-  /* Hero Section */
-  .hero {
-    text-align: center;
-    background: #f0f0f0;
-    padding: 50px 20px;
-  }
-  
-  .hero h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .hero p {
+  .brand-banner {
+    background-color: #000; /* Fundo preto */
+    padding: 20px 0; /* Espaçamento vertical */
+    display: flex; /* Alinha os elementos em linha */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    gap: 30px; /* Espaçamento entre as imagens */
+}
+
+.brand-banner img {
+    max-height: 60px; /* Altura máxima das imagens */
+    object-fit: contain; /* Garante que as imagens mantenham proporção */
+}
+
+  /* Hero Section Ajustado */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  background-image: url('/image/Find\ Clothes/Inicio.png');
+  background-size: contain; /* Evita que a imagem corte os modelos */
+  background-position: right center; /* Mantém a imagem à direita */
+  background-repeat: no-repeat;
+  height: 580px;
+  color: #000;
+  position: relative;
+}
+
+/* Remove a sobreposição clara */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0); /* Totalmente transparente */
+}
+
+/* Garante que o conteúdo fique bem alinhado */
+.hero .container {
+    position: absolute;
+    text-align: center; /* Mantém o alinhamento à esquerda */
+}
+
+/* Ajuste no título */
+.hero h2 {
+  font-size: 58px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  font-family: 'Integral CF', sans-serif;
+  line-height: 1.0;
+  max-width: 600px; /* Define a largura máxima da linha */
+  word-wrap: break-word; /* Garante que as palavras quebrem corretamente */
+}
+
+/* Ajuste na descrição */
+.hero p {
     font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .hero button {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .hero button:hover {
-    background: #555;
-  }
-  
-  .hero .stats {
+    margin-bottom: 25px;
+    line-height: 1.5;
+    max-width: 600px; /* Define a largura máxima da linha */
+}
+
+/* Ajustando o botão */
+.hero button {
+  display: block;  /* Garante que o botão ocupe toda a largura do conteúdo */
+  background: #000;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-align: left;
+  margin: 25px;
+}
+
+.hero button:hover {
+    background: #222;
+}
+
+/* Ajuste dos números */
+.hero .stats {
     display: flex;
-    justify-content: center;
     gap: 40px;
-    margin-top: 30px;
-  }
-  
-  .hero .stats div {
+    margin-top: 35px;
+    flex-wrap: wrap;
     font-size: 18px;
     font-weight: bold;
-  }
-  
+    justify-content: flex-start;
+}
+
   /* Seções de Produtos */
   section h3 {
     font-family: 'Integral CF', sans-serif; /* Fonte personalizada */
