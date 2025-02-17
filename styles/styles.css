@@ -1,0 +1,72 @@
+/*< bbdStyle - Browse by dress style */
+.bbdStyle {
+  background-color: #f0f0f0;
+  border-radius: 40px;
+  padding: 5% 3%;
+}
+.bbdStyle > .grid-bbd {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 16px;
+}
+.bbdStyle > .grid-bbd .bbdItem {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.bbdStyle > .grid-bbd .bbdItem > .titleCard {
+  font-weight: 700;
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  z-index: 2;
+  font-size: 24px;
+}
+.bbdStyle > .grid-bbd .bbdItem img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.bbdStyle > .grid-bbd > .casual img{
+  transform: scaleX(-1);
+  object-position: 50% 40%;
+  
+}
+.bbdStyle > .grid-bbd > .formal img{
+  object-position: 80% 40%;
+  transform: translateX(25%);
+}
+.bbdStyle > .grid-bbd > .party img{
+  object-position: 70% 50%;
+}
+.bbdStyle > .grid-bbd > .gym img{
+  object-position: 30% 40%;
+}
+/* bbdStyle - Browse by dress style >*/
+
+@media (min-width: 768px) {  
+  .bbdStyle > .grid-bbd {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 16px;
+  }
+  .bbdStyle > .grid-bbd .bbdItem {
+    width: 100%;
+    height: 289px;
+  }
+  .bbdStyle > .grid-bbd .bbdItem > .titleCard {
+    top: 25px;
+    left: 36px;
+    font-size: 32px;
+  }
+  .formal,
+  .party {
+    grid-column: span 2;
+  }
+}
