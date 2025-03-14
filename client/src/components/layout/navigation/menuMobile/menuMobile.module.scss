@@ -1,0 +1,47 @@
+/* Menu toggle */
+button{
+  background: none;
+  border: none;
+}
+.menuIcon {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    gap: 5px;
+    span {
+      display: block;
+      width: 29px;
+      height: 2px;
+      background: #000;
+      border-radius: 3px;
+      z-index: 2;
+      transition: 0.4s ease-in-out;
+      position: relative;
+      z-index: 99;
+    }
+  }
+  
+  .menuCheckbox {
+    display: none;
+    
+  }
+  .menuMobile .links a {
+    color: #000000;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  
+  input:checked ~ .menuMobile {
+    transform: none;
+  }
+
+  @media (min-width: 1024px) {
+    .displayNoneMobile {
+      display: none;
+    }
+  }

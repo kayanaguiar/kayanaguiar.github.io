@@ -1,0 +1,112 @@
+.content{
+    display: grid;
+    gap: 50px;
+    margin: 50px auto;
+    .productLists{
+      display: grid;
+      gap:40px ;
+    }
+    .productLists > :first-child{
+      border-bottom: 1px solid #0000001A;
+      padding-bottom: 40px;
+    }
+}  
+  .reviewList {
+    scroll-behavior: smooth;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 100%;
+     
+  }
+  .reviewTitle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .title{
+        font-family: var(--font-secundary);
+        font-size: 32px;
+    }
+  }
+  .arrows {
+    display: flex;
+    gap: 16px;
+    .arrowBtn {
+        background: none;
+        border: none;
+        color: #000;
+        cursor: pointer;
+    }
+    .arrowBtn:hover {
+    box-shadow: 0px 4px 8px rgb(255, 255, 255);
+    transform: translateY(-2px);
+    }
+  }
+  
+.reviewsSection {
+    position: relative;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: var(--margin-auto);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .slides {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    max-width: 100%;
+  }
+  .slides::-webkit-scrollbar {
+    display: none;
+  }
+  .slides .reviewCard:not(.reviewCard:first-child) {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .reviewList {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      scroll-behavior: smooth;
+      justify-content: center;
+    }
+  
+    .reviewCard {
+      flex: 0 0 calc(50%); /* 3 cards visíveis no desktop */
+      max-width: 400px;
+    }
+    .reviewList .reviewCard:not(.reviewCard:first-child) {
+      display: flex;
+    }
+  }
+  
+@media (min-width: 1024px) {
+  .content{
+    display: grid;
+    gap: 80px;
+    margin: 50px auto;
+} 
+    .reviewList {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        overflow: hidden;
+    }
+    .reviewTitle {
+        .title{
+            font-size: 48px;
+        }
+    }
+}
+@media (min-width: 1280px) {
+.reviewList {
+    width: calc(400px * 6);
+    justify-content: initial;
+}
+}

@@ -1,0 +1,51 @@
+.reviewCard {
+    background-color: #fff;
+    border: 1px solid #0000001a;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 0 0 100%;
+    .user {
+        display: flex;
+        gap: 10px;
+        .name {
+            font-weight: 700;
+            
+          }
+      }
+      .review {
+        font-weight: 400;
+        color: #00000099;
+      }
+      .date{
+        span{
+            text-transform: capitalize;
+        }
+      }
+  }
+ 
+  @media (min-width: 768px) {
+    .reviewCard {
+      flex: 0 0 calc(50%); 
+      max-width: 400px;
+    }
+    .reviewList .reviewCard:not(.reviewCard:first-child) {
+      display: flex;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .reviewCard {
+      flex: 0 0 calc(33.33%); 
+      width: 400px;
+      transition: transform 0.3s ease-in-out;
+      .user {
+        .name {
+            font-size: 16px;
+          }
+        }
+    }
+  }
+  

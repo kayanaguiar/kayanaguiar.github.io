@@ -1,0 +1,9 @@
+#root {
+  width: 100%;
+  font-size: 14px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+

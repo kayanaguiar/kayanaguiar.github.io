@@ -1,0 +1,191 @@
+.container{
+    width: 100%;
+    color: #00000099;
+    border: 1px solid #0000001A;
+    padding: 20px 5%;
+     border-top-left-radius: 20px; 
+    border-top-right-radius: 20px;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    z-index: 5;
+    left: 0;
+    top: 10%;
+    bottom: 0;
+    height: auto;
+    z-index: 10;
+    overflow-y: auto;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    .filters{
+        width: 100%;
+        display: grid;
+        gap: 20px;
+        .title{
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .list{
+            display: grid;
+            gap: 22.5px;
+            list-style: none;
+            .item{
+                cursor: pointer;
+                width: 100%;
+                transition: 0.3s ease;
+                input{
+                    display: none;
+                }
+                label{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between; 
+                    cursor: pointer;
+                }
+                label:has(input:checked) {
+                    font-weight: bolder;
+                    color: black;
+                }
+                label:focus-within {
+                    font-weight: bolder;
+                    color: black;
+                }
+            }
+            .item:hover{
+                color: black;
+             }
+        }
+        h4{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .priceWrapper{
+            .range-container {
+                position: relative;
+                width: 100%;
+                display: flex;
+                align-items: center;
+              }
+            input[type="range"] {
+                width: 100%;
+                height: 8px;
+                border-radius: 5px;
+                position: relative;
+              }
+              
+              input[type="range"]::before {
+                content: "";
+                height: 8px;
+                background: black;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 5px; 
+              }
+            
+        }
+        .colorWrapper{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            .colorItem {
+                position: relative;
+              }
+              
+              .hiddenCheckbox {
+                display: none;
+              }
+            .colorLabel {
+                width: 37px;
+                height: 37px;
+                border-radius: 50%;
+                border: 1px solid #00000033;
+                cursor: pointer;
+                display: inline-block;
+              }
+              .hiddenCheckbox:checked + .colorLabel::after {
+                content: "✔";
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
+              }
+        }
+        .sizeWrapper{
+            .sizes{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                .sizeItem{
+                    display: flex;
+                    align-items: center;
+                    background-color: #F0F0F0;
+                    border-radius: 62px;
+                    cursor: pointer;
+                    transition: 0.2s ease;
+                    font-size: 14px;
+                    padding: 0 10%;
+                    height: 39px;
+                    min-width: fit-content;
+                }
+                .sizeItem:hover {
+                    background-color: black;
+                    color: white;
+                }
+                
+                .sizeHiddenCheckbox {
+                    display: none;
+                }
+                
+                .sizeItem:has(.sizeHiddenCheckbox:checked) {
+                    background-color: black;
+                    color: white;
+                }
+                .sizeItem:focus-within {
+                    outline: none;
+                    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+    }
+    .filters > * {
+        border-bottom: 1px solid #0000001A;
+        padding-bottom: 20px;
+        display: grid;
+        gap: 16px;
+    }   
+    .filters:last-child{
+        border: none;
+    }
+}
+@media(min-width:768px) {
+    .container{
+        position: initial;
+        z-index: initial;
+        width: 100%;
+        max-width: 295px;
+
+        color: #00000099;
+        border: 1px solid #0000001A;
+        padding: 20px 5%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        gap: 20px;
+        max-height: fit-content;
+        background-color: white;
+        box-shadow: none;
+    }
+}
+

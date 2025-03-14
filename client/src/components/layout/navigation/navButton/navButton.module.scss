@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 12px;
+    transition: 0.2s ease-in;
+    justify-content: right;
+    .navBtn{
+      background: none;
+      border: none;
+      cursor: pointer;
+        img{
+          
+            align-self: center;
+            width: 21px;
+            height: 21px;
+        }
+    } 
+  }
+  .searchMobile {
+    color: black;
+  }
+  .searchBar {
+    display: none;
+    width: 100%;
+  }
+  .searchBar input {
+    background-color: #f0f0f0;
+  }
+
+  @media (min-width: 1024px) {
+    .searchMobile {
+      display: none;
+    }
+    .navigation {
+      height: 96px;
+      grid-template-columns: auto auto 1fr;
+      gap: 40px;
+    }
+    .searchBar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+    }
+    .displayNoneMobile {
+      display: none;
+    }
+  }

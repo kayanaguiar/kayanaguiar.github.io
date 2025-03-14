@@ -1,0 +1,17 @@
+.qtdBtn{
+    background-color: #F0F0F0;
+    display: flex;
+    gap: 15px;
+    border-radius: 62px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 14px;
+    .qtdFunc{
+        color: black;
+        background: none;
+        outline: none;
+        border: none;
+        font-size: 2em;
+        cursor: pointer;
+    }
+}

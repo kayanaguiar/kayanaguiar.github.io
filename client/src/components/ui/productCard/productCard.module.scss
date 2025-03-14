@@ -1,0 +1,92 @@
+.productCard{
+    .image{
+        background-color: #F0EEED;
+        border-radius: 20px;
+        object-fit: scale-down;
+        max-height: 200px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: 0.2s ease;
+        img{
+            object-fit: cover;
+            border-radius: 20px;
+            min-width: 198px;
+            max-height: 200px;
+        }
+    }
+    .image:hover + .details {
+        .title {
+            color: #4e4e4e;
+        }
+    }
+    .image:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+
+    .details{
+        display: flex;
+        flex-direction: column;
+        text-transform: capitalize;
+        font-size: 20px;
+        .title{
+            font-family: "Satoshi";
+            font-size: 0.8em;
+            font-weight: 700;
+            text-transform: capitalize;
+            text-align: left;
+            transition: 0.2s ease;
+        }
+        .title a:hover{
+            color: #666666;
+        }
+        .rateWrapper{
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            font-size: 0.6em;
+            font-weight: 400;
+        }
+        .priceWrapper{
+            display: flex;
+            align-items: flex-start;
+            gap: 5px;
+            .discount,
+            .price{
+                font-size: 1.25rem;
+                font-weight: 700;
+            }
+            .discount{
+                color: #00000066;
+                text-decoration: line-through;
+            }
+            .percentage{
+                color: #FF3333;
+                background-color: #FF33331A;
+                border-radius: 62px;
+                padding: 3px 8px;
+                font-size: 10px;
+                align-self: center;
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    .productCard{
+        .image{
+            max-width: 295px;
+            max-height: 298px;
+            margin-bottom: 16px;
+            img{
+                object-fit: cover;
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+    .productCard > .details .rating{
+        font-size: 0.7em;
+    }
+
+}

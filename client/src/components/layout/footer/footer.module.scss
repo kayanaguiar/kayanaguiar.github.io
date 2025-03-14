@@ -1,0 +1,29 @@
+/* Footer */
+.footer {
+    width: 100%;
+    color: #00000099;
+    background-color: var(--backgroundCcolor-grey);
+    margin-top: 146px;
+  }
+.wrapper {
+    justify-content: center;
+    display: grid;
+    grid-template-areas:
+      "newsletter"
+      "upperFooter"
+      "gapBottom"
+      "bottomFooter";
+    grid-template-rows: 150px auto 16px auto;
+    grid-template-columns: 1fr;
+  }
+  
+  @media (min-width: 768px) {
+    .footer {
+      margin-top: 95px;
+    }
+    .footer > .container {
+      grid-template-rows: 95px 50px auto 20px auto;
+    }
+  }
+  
+  

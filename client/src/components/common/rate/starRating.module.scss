@@ -1,0 +1,17 @@
+
+.rateWrapper{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-size: 0.6em;
+    font-weight: 400;
+}
+
+.stars {
+    display: flex;
+  }
+  
+  .starIcon {
+    width: 18px;
+    height: 18px;
+  }

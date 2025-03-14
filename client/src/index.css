@@ -1,0 +1,48 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #000;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --text-color: #000;
+  --bg-color: #fff;
+  --font-size-smaller: 14px;
+  --font-size-larger: 16px; 
+  --min-width: 320px;
+  --max-width: 1280px;
+  --max-content-width: 1240px;
+  --padding-common: 0 16px;
+  --padding-desktop: 0 20px;
+  --font-main: 'Satoshi';
+  --font-secundary: "IntegralCF";
+  --section-title-weith: 700;
+  --backgroundCcolor-grey: #f0f0f0;
+  --margin-auto: 0 auto;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Satoshi", "IntegralFC", sans-serif;
+}
+
+
+body {
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+

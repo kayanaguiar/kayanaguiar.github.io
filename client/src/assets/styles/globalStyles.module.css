@@ -1,0 +1,29 @@
+@import url('./fonts.css');
+
+.container{
+    width: 100%;
+    max-width: var(--max-width);
+    padding: var(--padding-common);
+    margin: var(--margin-auto);
+}
+
+.logo {
+    font-family: "IntegralCF";
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+
+.title{
+    font-size: 48px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .logo{
+        font-size: 32px;
+    }
+}
